@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #666666;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -50px; //değeri footer yüksekliği kadar veriyoruz
+}
+.footer-ghost {
+    height: 50px; //değeri footer yüksekliği kadar veriyoruz.
+}
+footer {
+    background-color:#363636;
+    width:70%;
+    margin:auto;
+    position: relative;
+}
+
+
+#header {
+   background-color:#363636;
+   float:top;
+   height:13%;
+   width:70%;
+   position: relative;
+   margin:auto;
+   margin-top:1%;
+    border-radius:15px 15px 0px 0px; 
+    -moz-border-radius: 15px 15px 0px 0px; 
+    -khtml-border-radius: 15px 15px 0px 0px; 
+    -webkit-border-radius: 15px 15px 0px 0px;
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+    border-color:#eee8aa;
+
+}
+
+#container{
+    margin:auto;
+    position:relative;
+    width:70%;
+    background-color: white;
+    padding-bottom: 50px;
+    overflow: auto;
+    height: auto;
+    min-height:600px;
+}
+
+#form{
+    min-height: 40px;
+    margin-bottom:20px;
+    background-color:#43cd80;
+    padding: 10px;
+    border-radius:10px 10px 10px 10px; 
+    -moz-border-radius: 10px 10px 10px 10px; 
+    -khtml-border-radius: 10px 10px 0px 10px; 
+    -webkit-border-radius: 10px 10px 10px 10px;
+
+}
+
+.tweets-form{
+    float:right;
+    width:49%;
+    margin-top:3%;
+}
+
+.unfollowed-form{
+    float:left;
+    width: 50%;
+    margin-top:5%;
+}
+

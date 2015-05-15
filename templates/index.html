@@ -1,0 +1,65 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+	<title></title>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<a href="http://fchecktool.appspot.com/" style="text-decoration: none; color: #CC3366 ">Twitter Tool</a>
+	</div>    
+   
+	<div id="container">
+
+		<div class="unfollowed-form">
+			Unfortunately Twitter only allows access to the last 3,200 tweets of an account.
+	   		<b>This require some time to process the data! Thank you for waiting!</b><p>
+			<div id="form">
+			<form action="/search" method="post">
+	      		@<input name="username" placeholder="Type username"></textarea>
+	      		
+
+	      		<input type="submit" value="Submit">
+	   		</form>
+	   		
+				{{ message }}
+	   		</div>
+	   	</div>	
+
+		<div class="tweets-form">
+			The first time you type your username I will store a base set of your followers and everytime you log in after I will create a new set and compare that with the stored set. <b>Only type your username and email address without password. Enjoy it!</b>
+
+			<div id="form">
+				<form action="/add" method="post">
+		      		<input name="username" rows="1" cols="25" placeholder="Type username"></textarea>
+		      		<input name="email" rows="1" cols="25" placeholder="Type email"></textarea>
+		      		<input type="submit" value="Submit">
+		      		
+		   		</form>
+	   		</div>
+	   	</div>
+
+	   	{% for tweet in data %}
+		<div id="tweet"><img src="{{image}}" />{{tweet}}</div>
+		{% endfor %}
+
+	   	{% for message in messages %}
+	   		{{message}}<p>
+	   	{% endfor %}
+		
+	</div>
+	<div class="footer-ghost"></div>
+</div>	
+
+
+<footer>
+   
+</footer> 		
+	
+
+
+</body>
+</html>
